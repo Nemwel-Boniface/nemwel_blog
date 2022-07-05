@@ -1,24 +1,64 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Nemwel blog
 
-Things you may want to cover:
+> This Blog app is a classic example of a blog website. It is a functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* Ruby version
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby
+- Rails
+- Postgresql
+## Getting Started
 
-* Database creation
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+Start by cloning the repository.
 
-* Services (job queues, cache servers, search engines, etc.)
+`git@github.com:Nemwel-Boniface/nemwel_blog.git`
 
-* Deployment instructions
+Navigate to the created folder.
 
-* ...
+`cd nemwel_blog`
+
+### Prerequisites
+
+- A Command Line Interface.
+- Having Ruby installed.
+- Setup Rails
+### Install
+To install rails, run `gem install rails on your terminal`
+### Usage
+
+### Run tests
+To run tests enter `rspec` command on your terminal
+
+## Authors
+
+👤 **Nemwel Boniface**
+
+- GitHub: [@Nemwel Boniface](https://github.com/Nemwel-Boniface)
+- Twitter: [@Nemwel Boniface](https://twitter.com/nemwel_bonie)
+- LinkedIn: [@Nemwel Bonifacej](https://www.linkedin.com/in/nemwel-nyandoro/)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Nemwel-Boniface/nemwel_blog/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
