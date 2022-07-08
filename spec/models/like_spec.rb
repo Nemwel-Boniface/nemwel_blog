@@ -10,12 +10,12 @@ RSpec.describe Like, type: :model do
   end
 
   it 'The author_id must not be blank' do
-      @like.author_id = false
-      expect(@like).to_not be_valid
-    end
+    @like.author_id = false
+    expect(@like).to_not be_valid
+  end
 
-    it 'The post_id must not be blank' do
-      @like.post_id = nil
-      expect(@like).to_not be_valid
-    end
+  it 'The post_id must not be blank' do
+    @like.post_id = nil
+    expect(@like).to_not be_valid
+  end
 end
