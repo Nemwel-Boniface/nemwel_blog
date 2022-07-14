@@ -1,6 +1,11 @@
 <div class="individualPOST">
   <div class="postheader">
     <h3>Post #<%=@post.id%> by <%=@post.author.name%></h3>
+
+    <div class="post_likes_comments">
+      <p>Comments: <%=@post.comments_counter%></p>
+      <p>Likes: <%=@post.likes_counter%></p>
+    </div>
   </div>
 
   <div class="postBody">
@@ -10,7 +15,7 @@
 
 <div class="postcomments">
     <div class="comments">
-      <%= @post.most_recent_comments.each do |comment| %> 
+      <% @post.most_recent_comments.each do |comment| %> 
         <p><%= comment.author.name %> : <%= comment.text %> </p>
       <% end %>
     </div>
