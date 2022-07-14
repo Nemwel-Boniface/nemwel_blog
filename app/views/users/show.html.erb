@@ -1,1 +1,30 @@
-<p>This is where we shall show specific info about a user</p>
+<div class="individualUser">
+  <div class="userHeader">
+  <img src="<%=@user.photo%>" alt="Userimage">
+  <div class="user_details">
+        <h3><%= @user.name %></h3>
+        <p>Number of posts: <%=@user.post_counter%>
+      </div>
+  </div>
+
+  <div class="userBio">
+    <h3>Bio</h3>
+    <p><%=@user.bio%></p>
+  </div>
+</div>
+
+<%@user.most_recent_posts.each do |post|%>
+  <div class="userPost">
+    <h3>Post #<%=post.id%></h3>
+    <p><%=post.text%></p>
+
+    <div class="post_likes_comments">
+      <p>Comments: <%=post.comments_counter%></p>
+      <p>Likes: <%=post.likes_counter%></p>
+    </div>
+  </div>
+<%end%>
+
+<div class="seeallposts">
+  <button type="button">See all posts</button>
+</div>
