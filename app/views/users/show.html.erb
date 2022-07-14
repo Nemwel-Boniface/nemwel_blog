@@ -1,10 +1,12 @@
+<%= stylesheet_link_tag "application"%>
+
 <div class="individualUser">
   <div class="userHeader">
-  <img src="<%=@user.photo%>" alt="Userimage">
-  <div class="user_details">
-        <h3><%= @user.name %></h3>
-        <p>Number of posts: <%=@user.post_counter%>
-      </div>
+    <img src="<%=@user.photo%>" alt="Userimage">
+    <div class="user_details">
+      <h3><%= @user.name %></h3>
+      <p>Number of posts: <%=@user.post_counter%>
+    </div>
   </div>
 
   <div class="userBio">
