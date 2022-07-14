@@ -1,1 +1,28 @@
-<h1>Welcome to my Posts page!</h1>
+<div class="user">
+      <img src=<%=@user.photo%> alt="User image" height="150" width="150" >
+      <div class="user_details">
+        <h3><%= @user.name %></h3>
+        <p>Number of posts: <%=@user.post_counter%>
+      </div>
+</div>
+
+<%@user.most_recent_posts.each do |post|%>
+  <div class="userPost">
+    <h3>Post #<%=post.id%></h3>
+    <p><%=post.text%></p>
+
+    <div class="post_likes_comments">
+      <p>Comments: <%=post.comments_counter%></p>
+      <p>Likes: <%=post.likes_counter%></p>
+    </div>
+  </div>
+  <div class="postcomments">
+    <% post.most_recent_comments.each do |comment| %> 
+        <p><%= comment.author.name %> : <%= comment.text %> </p>
+     <% end %>
+  </div>
+<%end%>
+
+<div class="seeallposts">
+  <button type="button">Pagination</button>
+</div>
