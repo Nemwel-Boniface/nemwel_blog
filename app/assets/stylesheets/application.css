@@ -14,8 +14,14 @@
  *= require_self
  */
 
-.users, 
-.individualUser, 
+.users {
+  padding: 2% 5%;
+}
+
+.individualUser {
+  padding: 2% 5%;
+}
+
 .userPost {
   padding: 2% 5%;
 }
