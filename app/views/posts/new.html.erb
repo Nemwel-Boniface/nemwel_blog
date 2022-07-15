@@ -1,7 +1,7 @@
 <h1>Welcome! We shall be creating a new post today!</h1>
 
 <div class="formContainer">
-  <%= form_with model: @post, url: "posts/" do |form| %>
+  <%= form_with model: @post, method: :post, local: true, url: "/posts/" do |form| %>
     <%=form.text_field :title, placeholder: "Post title", class: "posttitle" %><br>
     <%=form.text_field :text, placeholder: "Post content", class: "posttext" %><br>
     <%=form.submit "Create post", class: "formsubmit"%>
