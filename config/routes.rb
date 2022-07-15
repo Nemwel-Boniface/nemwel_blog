@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'users#index'
 
   get 'posts/new', to: 'posts#new'
+  get 'comments/new', to: 'comments#new'
 
   post 'posts/', to: 'posts#create'
 
