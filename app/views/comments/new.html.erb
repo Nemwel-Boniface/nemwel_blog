@@ -1,8 +1,8 @@
 <h1>Alright now let's add a comment for your post!</h1>
 
 <div class="commentContainer">
-  <%= form_with model: @post, method: :post, local: true, url: "/commenys/" do |comment| %>
-    <%=comment.text_field :text, placeholder: "Post comment here", class: "commenttext" %><br>
-    <%=comment.submit "Create post", class: "formsubmit"%>
+  <%= form_with model: @comment, method: :post, local: true, url: "/comments/" do |form| %>
+    <%=form.text_field :text, placeholder: "Post comment here", class: "commenttext" %><br>
+    <%=form.submit "Add your comment", class: "formsubmit"%>
   <%end%>
 </div>
