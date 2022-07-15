@@ -9,7 +9,6 @@ class CommentsController < ApplicationController
     @comment.post_id = @post.id
     @comment.author_id = current_user.id
 
-
     if @comment.save
       flash[:success] = 'Comment was created successfully'
       redirect_to "/users/#{@post.author.id}/posts/#{@post.id}"
