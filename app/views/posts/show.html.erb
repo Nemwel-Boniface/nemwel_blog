@@ -7,10 +7,15 @@
       <p>Likes: <%=@post.likes_counter%></p>
     </div>
   </div>
+  <%= form_with model: @like, url: user_post_path(post_id: @post.id) do |f| %>
+    <%= f.submit "Like" %>
+  <% end %>
 
   <div class="postBody">
     <p><%=@post.text%></p>
   </div>
+
+  <button>
 </div>
 
 <div class="postcomments">
