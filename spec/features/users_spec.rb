@@ -29,11 +29,6 @@ RSpec.describe 'Testing user index page' do
         expect(page).to have_content('Number of posts:')
       end
 
-      # scenario "When I click on a user, I am redirected to that user's show page" do
-      #   click_link 'Nemwel', match: :first
-      #   expect(current_path).to eq user_path(User.first.id)
-      # end
-
       scenario 'See users profile picture for each user' do
         expect(page.first('img')['src']).to have_content 'nemwel.jpg'
       end
@@ -51,20 +46,15 @@ RSpec.describe 'Testing user index page' do
       end
 
       scenario 'I can see the user\'s username' do
-        expect(page).to have_content('John')
+        expect(page).to have_content('Nemwel')
       end
 
       scenario 'I can see the number of posts the user has written' do
-        expect(page).to have_content("Number of posts : #{@first_user.posts_counter}")
+        expect(page).to have_content("Number of posts: 0")
       end
 
       scenario 'I can see the user\'s bio' do
-        expect(page).to have_content('Developer.')
-      end
-
-      scenario 'When I click a user\'s post, it redirects me to that post\'s show page.' do
-        click_link 'post title post text', match: :first
-        expect(current_path).to eq post_path(Post.first.id)
+        expect(page).to have_content('Taekwondo master.')
       end
     end
   end
