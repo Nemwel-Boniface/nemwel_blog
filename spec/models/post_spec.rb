@@ -31,7 +31,7 @@ RSpec.describe Post, type: :model do
   end
 
   it 'Most recent comments returns most recent 5 comments' do
-    comment = Post.most_recent_comments.length
-    expect(comment).to be <= 5
+    comment = Post.new
+    expect(comment.most_recent_comments.count).to be <= 5
   end
 end

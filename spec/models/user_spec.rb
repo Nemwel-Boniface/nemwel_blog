@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
   end
 
   it 'Most recent user returns only three posts' do
-    person = User.most_recent_posts.length
-    expect(person).to be <= 3
+    person = User.new
+    expect(person.most_recent_posts.count).to be <= 3
   end
 end
