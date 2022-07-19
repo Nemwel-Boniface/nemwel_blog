@@ -50,7 +50,7 @@ RSpec.describe 'Testing user index page' do
       end
 
       scenario 'I can see the number of posts the user has written' do
-        expect(page).to have_content("Number of posts: 0")
+        expect(page).to have_content('Number of posts: 0')
       end
 
       scenario 'I can see the user\'s bio' do
