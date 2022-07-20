@@ -43,6 +43,11 @@ To run tests enter `rspec` command on your terminal
 - Twitter: [@Nemwel Boniface](https://twitter.com/nemwel_bonie)
 - LinkedIn: [@Nemwel Bonifacej](https://www.linkedin.com/in/nemwel-nyandoro/)
 
+👤 **Cédric Kossi**
+
+- GitHub: [@kosher9](https://github.com/kosher9)
+- Twitter: [@kosherus](https://twitter.com/kosherus)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/lionel-c%C3%A9dric-kossi-323042172)
 
 
 ## 🤝 Contributing
