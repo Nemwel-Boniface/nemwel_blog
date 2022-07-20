@@ -9,6 +9,7 @@
       <div class="user_details">
         <h3><%= user.name %></h3>
         <p>Number of posts: <%=user.post_counter%>
+        <%= link_to 'All posts', user_posts_path(user.id), class: "nav-link" %>
       </div>
     </div>
   <%end%>
