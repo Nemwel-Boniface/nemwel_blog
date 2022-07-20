@@ -3,6 +3,8 @@
       <div class="user_details">
         <h3><%= @user.name %></h3>
         <p>Number of posts: <%=@user.post_counter%>
+        <%= link_to 'Add new Post', new_user_post_path(@user.id), class: "nav-link" %>
+
       </div>
 </div>
 
@@ -10,6 +12,8 @@
   <div class="userPost">
     <h3>Post #<%=post.id%></h3>
     <p><%=post.text%></p>
+    <%= link_to 'Add new comment', new_post_comment_path(post.id), class: "nav-link" %>
+
 
     <div class="post_likes_comments">
       <p>Comments: <%=post.comments_counter%></p>
