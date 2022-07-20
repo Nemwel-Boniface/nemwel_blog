@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   end
 
   def show
-
     if params[:id] == 'sign_out'
       redirect_to new_user_session_path
     else
