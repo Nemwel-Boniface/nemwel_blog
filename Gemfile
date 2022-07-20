@@ -79,3 +79,7 @@ group :test do
   gem 'capybara'
   gem 'webdrivers', require: false
 end
+
+# Devise
+
+gem 'devise'
